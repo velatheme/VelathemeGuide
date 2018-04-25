@@ -1,0 +1,12 @@
+-
+  var menu = [
+    { id: 1, name: 'Home', link: '/'},
+    { id: 2, name: 'Help topics', link: '/'},
+    { id: 3, name: 'Features', link: '/'},
+    { id: 4, name: 'Contact', link: '/'}
+  ];
+nav.vel-main-menu
+  ul.nav
+    for item in menu
+      li.nav-item
+        a.nav-link(href=item.link)=item.name

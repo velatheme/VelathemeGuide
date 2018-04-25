@@ -1,0 +1,10 @@
+extends pug/layout/master
+
+block main-content
+  block homepage_top
+    section.vel-section.main-header.text-center
+      .container
+        h2.main-header__heading Documentation guide
+        .main-header__subheading VELA FRAMEWORK (VERSION V2.0.0)
+  block homepage_features
+    include pug/components/homepage_features

@@ -1,0 +1,79 @@
+section.vel-section
+  .container
+    h3.vel-section__heading.text-center Set up and run your theme
+    .vel-section__content
+      .row
+        -
+          var features = [
+            {
+              icon: 'icon_light_bulb',
+              title: 'Getting started with Shopify',
+              desc: "If you're setting up a Shopify store for the first time, we recommend taking a gander at the <a href='https://help.shopify.com/' target='blank'> Shopify help center</a> for a full overview of the platform.",
+              url: '/getting_started.html'
+            },
+            {
+              icon: 'icon_setting',
+              title: 'Using the theme editor',
+              desc: "You'll see that the theme editor is divided into two tabs: Sections and Theme settings.",
+              url: '#'
+            },
+            {
+              icon: 'icon_using_theme',
+              title: 'Theme settings',
+              desc: "On the Theme settings, you can customize your store's font and colors, and make changes to theme features and checkout settings.",
+              url: '#'
+            },
+            {
+              icon: 'icon_menu',
+              title: 'Setting up your main menu',
+              desc: 'You can help customers to navigate your online store by using menus to organize your products, collections, webpages, and blog posts.',
+              url: '#'
+            },
+            {
+              icon: 'icon_sidebar',
+              title: 'Group filtering',
+              desc: 'You can let customers filter your collections with product tags. This customization shows you how to add filter by tag on collection pages. It displayed on sidebar.',
+              url: '#'
+            },
+            {
+              icon: 'icon_home',
+              title: 'Setting up your homepage',
+              desc: 'You can modify the content and layout of homepage on your store. You can add, reorder, and remove block of content from homepage.',
+              url: '#'
+            },
+            {
+              icon: 'icon_collection',
+              title: 'Collection pages',
+              desc: 'Set up and configure for collection pages.',
+              url: '#'
+            },
+            {
+              icon: 'icon_product',
+              title: 'Product pages',
+              desc: 'Set up and configure for product pages.',
+              url: '#'
+            },
+            {
+              icon: 'icon_page',
+              title: 'Static pages',
+              desc: 'Set up and configure for contact us, about us, F.A.Qs, ... pages',
+              url: '#'
+            },
+            {
+              icon: 'icon_note',
+              title: 'Release note',
+              desc: 'Got an old version of the theme and want a new one?',
+              url: '#'
+            }
+          ];
+        for item in features
+          .col-12.col-md-6
+            .vel-card.card
+              .vel-card__decor
+                a(href=item.url)
+                  +#{item.icon}(class='icon--small icon--primary')
+              .vel-card__content
+                .card-body
+                  h5.card-title
+                    a(href=item.url)=item.title
+                  p.card-text !{item.desc}

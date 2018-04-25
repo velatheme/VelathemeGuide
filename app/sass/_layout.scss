@@ -1,0 +1,76 @@
+.page-container {
+  max-width: 1600px;
+  min-height: 100vh;
+  margin: 0 auto;
+  background-color: $vela-content-background;
+}
+
+.main-header {
+  padding: 60px 0;
+  color: $vela-text-color-light;
+  background-color: $vela-background-dark;
+
+  &__heading {
+    font-size: rem(40px);
+    font-weight: 300;
+  }
+}
+
+// HOMEPAGE SECTION
+.vel-section {
+  padding: 60px 0;
+
+  &__heading {
+    margin-bottom: $vela-gutter-width / 2;
+    font-size: rem(36px);
+    font-weight: 300;
+  }
+}
+
+// HOMEPAGE FEATURES
+.vel-card {
+  min-height: 131px;
+  margin-top: $vela-gutter-width;
+  flex-direction: row;
+  transition: all .35s ease;
+
+  &__decor {
+    min-width: 60px;
+    padding: 20px 0;
+    padding-left: $card-spacer-x;
+  }
+
+  &:hover {
+    border-color: $nocolor;
+    box-shadow: 0 5px 25px 0 rgba(0, 0, 0, 0.15);
+    transform: translateY(-2px);
+  }
+}
+
+// SIDEBAR
+.vel-sidebar {
+  &__inner {
+    padding: $vela-gutter-width 0;
+  }
+}
+
+.nav {
+  &--sidebar {
+    .nav-link {
+      padding: 0.7rem 1.1rem;
+      border-radius: 0;
+      font-weight: 500;
+    }
+  }
+}
+
+// DOCUMENTATION GUIDE
+.page-doc {
+  padding: 60px 0;
+
+  &__content {
+    padding-top: $vela-gutter-width;
+    padding-bottom: $vela-gutter-width;
+    border-left: 1px solid $vela-border-color;
+  }
+}

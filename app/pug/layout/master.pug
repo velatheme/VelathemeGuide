@@ -1,0 +1,24 @@
+include ../head/head
+include ../header/header
+include ../footer/footer
+include ../mixins/mixins
+include ../mixins/icons
+
+doctype html
+html
+  block head
+    +head(head.index)
+
+  block body
+    body
+      .page-container
+        
+        block header
+          +header()
+
+        block main
+          main.vel-main
+            block main-content
+
+        block footer
+          +footer()

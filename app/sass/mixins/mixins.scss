@@ -1,0 +1,7 @@
+@function rem($value, $base: $vela-font-size) {
+  @return ($value / $base) * 1rem;
+}
+
+@function em($value, $base: $vela-font-size) {
+  @return ($value / $base) * 1em;
+}
