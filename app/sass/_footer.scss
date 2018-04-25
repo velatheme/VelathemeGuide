@@ -1,0 +1,8 @@
+.vel-footer {
+  color: $vela-footer-text-color;
+  background-color: $vela-footer-background;
+
+  &__wrapper {
+    padding: $vela-gutter-width / 2 0;
+  }
+}

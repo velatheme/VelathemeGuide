@@ -1,0 +1,16 @@
+.icon {
+  display: inline-block;
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  &--small {
+    width: 40px;
+    height: 40px;
+  }
+
+  &--primary {
+    fill: $vela-color-primary;
+    color: $vela-color-primary;
+  }
+}

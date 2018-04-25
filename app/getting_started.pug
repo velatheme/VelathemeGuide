@@ -1,0 +1,37 @@
+extends pug/layout/master
+
+block main-content
+  .page-doc
+    .container
+      .row
+        .col-12.col-md-3
+          .vel-sidebar
+            .vel-sidebar__inner
+              div.nav.nav-pills.nav--sidebar.flex-column
+                a.nav-link.js-nav-scroll.active(href='#sectionOne') Getting Started
+                a.nav-link.js-nav-scroll(href='#sectionTwo') Installation
+                a.nav-link.js-nav-scroll(href='#three') Morbi leo risus
+                a.nav-link.js-nav-scroll(href='#four') Porta ac consectetur ac
+                a.nav-link.js-nav-scroll(href='#five') Vestibulum at eros
+        .page-doc__content.col-12.col-md-9
+          section#sectionOne.section-documentation
+            h2.section-documentation__heading Getting Started
+            p To install this theme you must create a Shopify account.
+            p For information an overview of Shopify's platform and features please see the 
+              a(href='https://help.shopify.com/' target='blank') Shopify Documentation
+            p Shopify is a hosted ecommerce solution that allows you to set up and run your own online store. Pick an ecommerce website template (preferably from us!), list your products, accept credit card orders, and ship your goods — all with a few clicks of the mouse. With Shopify it's easy to sell online and there's no software to download or maintain.
+            p You can start free trial with Shopify. Click the image below Start your free 14-day trial of Shopify
+          section#sectionTwo.section-documentation
+            h2 Installation
+            p Purchase our template from 
+              a(href='https://themeforest.net/' target='blank') Themeforest.net
+              | , you'll receice your theme as a 
+              b .zip 
+              | file named something like 
+              code velatheme.v1.0.0_extract_first.zip
+          section#three.section-documentation
+            h2 This is section three
+          section#four.section-documentation
+            h2 This is section four
+          section#five.section-documentation
+            h2 This is section five

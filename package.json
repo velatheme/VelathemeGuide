@@ -1,0 +1,31 @@
+{
+  "name": "VelathemeDevelop",
+  "version": "1.0.0",
+  "description": "Velatheme private package.",
+  "main": "vela.js",
+  "author": "velatheme",
+  "license": "SEE LICENSE IN license.txt",
+  "dependencies": {
+    "bootstrap": "^4.1.0",
+    "browser-sync": "^2.18.13",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-autoprefixer": "^5.0.0",
+    "gulp-changed": "^3.1.1",
+    "gulp-include": "^2.3.1",
+    "gulp-load-plugins": "^1.5.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-prettify": "^0.5.0",
+    "gulp-pug": "^3.3.0",
+    "gulp-pug-inheritance": "^0.2.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.1",
+    "gulp-watch": "^4.3.11",
+    "install": "^0.10.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.14.3",
+    "run-sequence": "^2.2.0",
+    "sticky-sidebar": "^3.3.1"
+  },
+  "devDependencies": {}
+}

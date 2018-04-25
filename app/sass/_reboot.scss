@@ -1,0 +1,11 @@
+a {
+  transition: all .35s ease;
+  
+  &:focus {
+    outline: 0;
+  }
+}
+
+html {
+  font-size: $vela-font-size;
+}
