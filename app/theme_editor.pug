@@ -1,0 +1,58 @@
+extends pug/layout/master
+
+block main-content
+  .page-doc
+    .container
+      .row.justify-content-center
+        .page-doc__content.col-12.col-md-9
+          +section_documentation('sectionOne', 'Getting Started')
+            p Any changes you make to the look and feel of your store will happen in the theme editor. You'll access it by navigating to 
+              b Online Store &gt; Themes 
+              | and then clicking the purple 
+              b Customize 
+              | button in the top right of your screen.
+            +vela_img('images/velguide_image5.png', 'Velatheme')
+            p You'll see that the theme editor is divided into two tabs: 
+              b Sections 
+              | and 
+              b Theme settings. 
+              | We'll cover each detail on the other pages.
+            br
+            h4 1. Sections
+            p The 
+              b Sections 
+              | tab contains all of the sections that are available to you in Empire. Essentially, sections are the building blocks of your store, allowing you to assemble pages from customizable, re-orderable components. You can add, remove, and reorder sections, as well as access the customization features for each from the 
+              b Sections 
+              | tab. We wrote a documentation all about how they work and why they're great, which you can read 
+              a(href='/theme_settings.html') here.
+            br
+            h4 2. Theme settings
+            p The 
+              b Theme settings 
+              | tab lets you make global changes to the look of your store, including colors, typography, and features, as well as checkout page.
+            +vela_img('images/velguide_image6.png', 'Velatheme')
+            br
+            h4 3. Pro tips
+            p Most of the time you spend in the theme editor will be on either the Sections or General settings pages. There are, however, a few lesser-known areas and shortcuts that can be super helpful as you're building your store. Here's what you need to know:
+            p
+              b a. Theme actions
+            p It in bottom left hand corner of your screen contains a bunch of handy links.
+            +vela_img('images/velguide_image7.png', 'Velatheme')
+            ul
+              li
+                b Preview theme: 
+                | If you want preview your store in full-screen on new tabs. You need to do is click
+                b Preview theme, 
+                | Then your store will be opened in a new tabs. It will help you see the your store as your customers.
+              li
+                b Edit code: 
+                | If you're fluent in 
+                b Liquid 
+                | (Shopify's templating language) you can kick your customizations up a notch by digging into the theme's code under Edit code. If not, our support team will be more than happy to put you in touch with someone who is.
+              li
+                b Edit languages: 
+                | Lets you both change the language of your theme and checkout as well as customize the wording that is used throughout your store.
+            p
+              b b. Viewport
+            p At the top center of the screen, you'll find three little buttons that let you toggle between previewing your site look on desktop and on mobile and on full-screen. It looks like this:
+            +vela_img('images/velguide_image8.png', 'Velatheme')

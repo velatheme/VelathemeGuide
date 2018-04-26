@@ -1,0 +1,20 @@
+.vel-image {
+  margin-bottom: $vela-gutter-width / 2;
+
+  img {
+    border: 2px solid $vela-border-color;
+  }
+}
+
+.vel-video {
+  iframe {
+    border: 2px solid $vela-border-color;
+  }
+}
+
+.vel-blockquote {
+  padding: 10px 0;
+  padding-left: $vela-gutter-width / 2;
+  border-left: 3px solid $vela-color-primary;
+  background-color: rgba($vela-border-color, 0.5);
+}

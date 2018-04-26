@@ -6,6 +6,7 @@
   "author": "velatheme",
   "license": "SEE LICENSE IN license.txt",
   "dependencies": {
+    "@fancyapps/fancybox": "^3.3.5",
     "bootstrap": "^4.1.0",
     "browser-sync": "^2.18.13",
     "del": "^3.0.0",

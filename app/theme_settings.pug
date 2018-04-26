@@ -1,0 +1,29 @@
+extends pug/layout/master
+
+block main-content
+  .page-doc
+    .container
+      .row.justify-content-center
+        .col-12.col-md-3
+          -
+            var menus = [
+              { id:'sectionOne', title: 'Vela Colors' },
+              { id:'sectionTwo', title: 'Vela Typography' },
+              { id:'sectionThree', title: 'Vela Features' },
+              { id:'sectionThree', title: 'Vela Currency' },
+              { id:'sectionFour', title: 'Checkout' }
+            ];
+          +sidebar_menu(menus)
+
+        .page-doc__content.col-12.col-md-9
+          +section_documentation('sectionOne', 'Vela Colors')
+            p Many color settings in Reach are customizable, with clear self-explanatory names in the settings. Click on a swatch to edit the colors. A popup with a color selector will appear, which allows you to adjust and experiment with custom colors.
+            +vela_img('images/velguide_image9.png', 'Velatheme')
+            br
+            p
+              b Color select box
+            p The label on the right signifies "transparent", while the box to the left represents the color you've selected. You can also enter a specific color hex code in the bottom right corner if you wish (e.g. #ff4000). This is handy for matching precise colors across your store. For instance, if you want to match your Text color primary, you could copy the hex code from the former and place it in the field for the latter. The below shows the list of colors you have recently used for your store.
+            +vela_img('images/velguide_image10.png', 'Velatheme')
+          +section_documentation('sectionTwo', 'Vela Typography')
+            p Our themes comes with a config of hand-picked fonts for your store. You can use google fonts or your custom fonts. Font size can be set for your store by using range slider.
+            +vela_img('images/velguide_image11.png', 'Velatheme')
