@@ -69,8 +69,25 @@
   padding: 60px 0;
 
   &__content {
-    padding-top: $vela-gutter-width;
-    padding-bottom: $vela-gutter-width;
     border-left: 1px solid $vela-border-color;
+  }
+}
+
+// DOCUMENTATION SECTION
+.section-documentation {
+  margin-bottom: 60px;
+  padding: $vela-gutter-width 0;
+  border-bottom: 1px solid $vela-border-color;
+
+  &__heading {
+    margin-bottom: $vela-gutter-width;
+    padding-bottom: 10px;
+    border-bottom: 2px solid $vela-color-primary;
+  }
+
+  h3,
+  h4 {
+    margin-bottom: $vela-gutter-width / 2;
+    padding: 5px 0;
   }
 }

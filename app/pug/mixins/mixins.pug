@@ -1,2 +1,19 @@
 mixin img(src, alt)
   img.img-fluid(src=src, alt=alt)&attributes(attributes)
+
+mixin vela_img(src, alt)
+  .vel-image
+    a(href=src, data-fancybox)&attributes(attributes)
+      img.img-fluid(src=src, alt=alt)&attributes(attributes)
+
+mixin sidebar_menu(data)
+  .vel-sidebar
+    .vel-sidebar__inner
+      div.nav.nav-pills.nav--sidebar.flex-column
+        for item in data
+          a.nav-link.js-nav-scroll(href='#' + item.id) #{item.title}
+
+mixin section_documentation(id, heading)
+  section.section-documentation(id=id)
+    h2.section-documentation__heading=heading
+    block
