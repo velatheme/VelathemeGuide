@@ -13,8 +13,7 @@
 }
 
 .vel-blockquote {
-  padding: 10px 0;
-  padding-left: $vela-gutter-width / 2;
+  padding: 10px $vela-gutter-width / 2;
   border-left: 3px solid $vela-color-primary;
   background-color: rgba($vela-border-color, 0.5);
 }
