@@ -1,5 +1,8 @@
 extends pug/layout/master
 
+block head_title
+  title Theme settings
+
 block main-content
   .page-doc
     .container
@@ -10,15 +13,15 @@ block main-content
               { id:'sectionOne', title: 'Vela Colors' },
               { id:'sectionTwo', title: 'Vela Typography' },
               { id:'sectionThree', title: 'Vela Features' },
-              { id:'sectionThree', title: 'Vela Currency' },
-              { id:'sectionFour', title: 'Checkout' }
+              { id:'sectionFour', title: 'Vela Currency' },
+              { id:'sectionFive', title: 'Checkout' }
             ];
           +sidebar_menu(menus)
 
         .page-doc__content.col-12.col-md-9
           +section_documentation('sectionOne', 'Vela Colors')
             p Many color settings in Reach are customizable, with clear self-explanatory names in the settings. Click on a swatch to edit the colors. A popup with a color selector will appear, which allows you to adjust and experiment with custom colors.
-            +vela_img('images/velguide_image9.png', 'Velatheme')
+            +vela_img('images/velguide_image9.jpg', 'Velatheme')
             br
             p
               b Color select box
@@ -26,4 +29,247 @@ block main-content
             +vela_img('images/velguide_image10.png', 'Velatheme')
           +section_documentation('sectionTwo', 'Vela Typography')
             p Our themes comes with a config of hand-picked fonts for your store. You can use google fonts or your custom fonts. Font size can be set for your store by using range slider.
-            +vela_img('images/velguide_image11.png', 'Velatheme')
+            +vela_img('images/velguide_image11.jpg', 'Velatheme')
+            p Our theme will use two fonts.
+            ul
+              li
+                b Font Family: 
+                | Body text fonts
+              li
+                b Font Family Secondary: 
+                | Menu text fonts or sometimes use in our theme for heading.
+            br
+            p To use a new font you need to follow the steps below.
+            h5 1. Use google fonts
+            p Google Fonts make it easy to bring quality typography to your online store. All Google Fonts are open source. This means that you are free to use them in your Shopify store.
+            p
+              b a. Choose a font and copy the link code
+            p Visit 
+              a(href='https://fonts.google.com/' target='blank') Google Fonts.
+            p Use the search and filter functions to find a font you want to use in your Shopify online store.
+            p Click the plus button for each font style that you want.
+            p Click 
+              b (x) Families Selected 
+              | at the bottom of the page to view the fonts you have selected.
+            p Copy the href url in the Standard area by highlighting it and pressing ctrl + C on a PC or command + C on a Mac.
+            +vela_img('images/velguide_image12.png', 'Velatheme')
+            br
+            p
+              b b. Add the link code to your theme
+            p In a new browser tab, open your 
+              a(href='//www.shopify.com/admin') Shopify admin.
+            p From your Shopify admin, go to 
+              b Online Store &gt; Themes.
+            p Choose tab 
+              b Theme settings 
+              | and open panel 
+              b Vela Typography
+            p Paste the code you copied from Google Fonts in input 
+              b Google font URL
+            p Enter the Google Fonts name in the textbox 
+              b Fonts name
+            br
+            h5 2. Use custom font
+            p You do not need to repeat the operation as above with the 
+              b Font family secondary, 
+              | if you just want to use a common font.
+            p Choose 
+              b Custom font 
+              | in 
+              b Font style
+            p Enter the Google Fonts name in the textbox
+              b Fonts name
+          +section_documentation('sectionThree', 'Vela Features')
+            p On the 
+              b Vela Features
+              | , you can customize the main features of the theme. You can enable/disable and config for each features.
+            +vela_img('images/velguide_image13.jpg', 'Velatheme')
+            br
+            #features-theme-settings.vela-features
+              h3.vela-features__heading 1. Theme settings
+              p 
+                b a. Favicon image: 
+                | Upload favicon image, and have a .png extension.
+              p 
+                b b. Twitter Link: 
+                | This is features 
+                b Twitter Cards. 
+                | Enter your Twitter link to textbox.
+              p 
+                b Twitter Cards 
+                | make it possible for you to attach media experiences to Tweets that link to your store content. Simply add a snippet to your theme, and visitors who Tweet your products and blog posts will have an attractive “card” added to their Tweet that will be visible to all their followers.
+              +vela_img('images/velguide_image14.jpg', 'Velatheme')
+            #features-product-reviews.vela-features
+              h3.vela-features__heading 2. Product reviews
+              p Enable/disable product review app. You need to install the app into your store to use.
+              p
+                a(href='https://apps.shopify.com/product-reviews') Product reviews
+              +vela_img('images/velguide_image15.png', 'Velatheme')
+            #features-product-box-item.vela-features
+              h3.vela-features__heading 2. Product box item
+              p 
+                b a. Type: 
+                | Product box item will display corresponding to the type you have selected. Some themes will not have this feature.
+              p Example: 
+              p - Type one
+              +vela_img('images/velguide_image16.png', 'Velatheme')
+              p - Type two
+              +vela_img('images/velguide_image17.png', 'Velatheme')
+              p 
+                b b. Show color variant: 
+                | Show/hide box color on product box item
+              +vela_img('images/velguide_image18.png', 'Velatheme')
+              p 
+                b c. Show product type: 
+                | Show/hide product type on product box item
+              p 
+                b d. Show review: 
+                | Show/hide start review on product box item (Product review feature requests must be enabled)
+              +vela_img('images/velguide_image19.png', 'Velatheme')
+              p 
+                b e. Show short description: 
+                | Show/hide product short description on product box item
+              +vela_img('images/velguide_image20.png', 'Velatheme')
+              p 
+                b f. Show label sale: 
+                | Show/hide label sale on product box item
+              +vela_img('images/velguide_image21.png', 'Velatheme')
+            #features-loading-site.vela-features
+              h3.vela-features__heading 2. Loading site
+              p Enable/disable loading icon when access to website.
+            #features-float-header.vela-features
+              h3.vela-features__heading 3. Float header
+              p Enable/disable sticky header.
+            #features-gototop.vela-features
+              h3.vela-features__heading 4. Go to top
+              p Enable/disable button Go to top.
+              +vela_img('images/velguide_image22.png', 'Velatheme')
+            #features-product-variants.vela-features
+              h3.vela-features__heading 5. Product variants
+              p 
+                b a. Show unavaiable: 
+                | Select if you want to display variants that are out of stock.
+              p - Select
+              +vela_img('images/velguide_image23.png', 'Velatheme')
+              p - Unselect
+              +vela_img('images/velguide_image24.png', 'Velatheme')
+              p 
+                b b. Use swatch: 
+                | Select if you want use swatch variant.
+              p - Select
+              +vela_img('images/velguide_image24.png', 'Velatheme')
+              p - Unselect (Dropdown menu)
+              +vela_img('images/velguide_image25.png', 'Velatheme')
+            #features-second-image.vela-features
+              h3.vela-features__heading 6. Second product image
+              p Show/hide product image when hover to product box item.
+            #features-second-image.vela-features
+              h3.vela-features__heading 7. Filter collection site
+              p
+                b Enable multiple choices: 
+                | Enable/disable allow multiple choices tag on Filter by tags on collection page.
+              p You can choose both size 23 and 24 as image below.
+              +vela_img('images/velguide_image26.png', 'Velatheme')
+            #features-product-quickview.vela-features
+              h3.vela-features__heading 8. Product quickview
+              p Enable/disable and config product quickview on product box item.
+              p
+                b a. Show availability: 
+                | Show/hide product availability on product quickview box.
+              p
+                b b. Show vendor: 
+                | Show/hide product vendor on product quickview box.
+              p
+                b c. Show product type: 
+                | Show/hide product type on product quickview box.
+              p
+                b d. Show product SKU: 
+                | Show/hide product SKU on product quickview box.
+              +vela_img('images/velguide_image27.png', 'Velatheme')
+            #features-ajax-cart.vela-features
+              h3.vela-features__heading 9. Ajax cart
+              p Cart on your store's, when customer add to cart.
+              p
+                b a. Cart type: 
+                | Choose cart type displayed when add product to the cart
+              p
+                b b. Show cart notes: 
+                | Show/hide cart notes on cart.
+              p
+                b c. Show product vendor: 
+                | Show/hide product vendor on cart.
+              br
+              p
+                b - Modal
+              +vela_img('images/velguide_image28.png', 'Velatheme')
+              +vela_img('images/velguide_image29.png', 'Velatheme')
+              br
+              p
+                b - Drawer
+              +vela_img('images/velguide_image30.png', 'Velatheme')
+              br
+              p
+                b - Page
+              +vela_img('images/velguide_image31.png', 'Velatheme')
+          +section_documentation('sectionFour', 'Vela Currency')
+            p 
+              b Vela Currency
+              | lets you provide a selector menu that lets customers view your prices in different currencies. Their currency selection will be stored in a cookie and used again on their next visit to your store. In the config, you can choose which currencies you want to show in selector menu.
+            p Exchange rates used by Shopify are refreshed twice a day based on the rates at XE.com. Although rates are automatically scheduled to be updated at 00:00 GMT and 07:00 GMT, the updates might take place up to a couple of hours after their scheduled time.
+            p No matter what currency you show on store pages, Shopify will always process orders in your store's operating currency.
+            h4 1. Edit your money formats
+            p
+              b B1. 
+              | From your Shopify admin, go to 
+              b Settings.
+            p
+              b B2. 
+              | In the 
+              b Standards and formats 
+              | section, find the 
+              b Currency 
+              | setting: 
+            +vela_img('images/velguide_image32.png', 'Velatheme')
+            p
+              b B3. 
+              | Click 
+              b Change 
+              | formatting.
+            p
+              b B4. 
+              | Find the 
+              b HTML with currency 
+              | and the 
+              b HTML without 
+              | currency formats: 
+            +vela_img('images/velguide_image33.png', 'Velatheme')
+            p
+              b B5. 
+              | In each text field, copy and paste 
+              code &lt;span class=money&gt; 
+              | in front of the formatting text.
+            blockquote.blockquote.vel-blockquote Note: Do not put quotation marks around the word 
+              code money 
+              | in the 
+              code span 
+              | tags. Adding quotes will break the code. 
+            p In each text field, copy and paste 
+              code &lt;/span&gt; 
+              | after the formatting text: 
+            +vela_img('images/velguide_image34.png', 'Velatheme')
+            p You might notice that by default the original 
+              b HTML without currency 
+              | field does not include a currency descriptor, such as USD or CAD. For this tutorial, we recommend that you do add the descriptor, to avoid any confusion between currencies later.
+            blockquote.blockquote.vel-blockquote 
+              p Place the 
+                code span 
+                | tags in the 
+                b HTML with currency 
+                | and 
+                b HTML without currency 
+                | text fields only. 
+              p Do not place the tags in the 
+                b Email with currency 
+                | or 
+                b Email without currency 
+                | text fields.

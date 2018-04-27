@@ -1,0 +1,20 @@
+extends pug/layout/master
+
+block head_title
+  title Homepage
+
+block main-content
+  .page-doc
+    .container
+      .row.justify-content-center
+        .col-12.col-md-3
+          -
+            var menus = [
+              { id:'sectionOne', title: 'Homepage' }
+            ];
+          +sidebar_menu(menus)
+
+        .page-doc__content.col-12.col-md-9
+          +section_documentation('sectionOne', 'Homepage')
+            .alert.alert-warning We're update content. Please wait ...
+            p(style='min-height: 100vh') &nbsp;

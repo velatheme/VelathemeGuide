@@ -9,10 +9,12 @@ window.vela = window.vela || {};
 vela.init = function() {
   vela.menuScroll();
   vela.docSidebar();
+  vela.gotoTop();
 };
 
 vela.menuScroll = function() {
-  $('body').on('click', '.js-nav-scroll', function() {
+  $('body').on('click', '.js-nav-scroll', function(e) {
+    e.preventDefault();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -43,7 +45,23 @@ vela.menuSidebarScroll = function() {
       });
     }
   });
-}
+};
+
+vela.gotoTop = function() {
+  $('body').on('click', '.js-gototop', function(e) {
+    e.preventDefault();
+    $('body,html').animate({scrollTop:0 },'normal');
+    return!1
+  });
+
+  $(window).scroll(function() {
+    if ($(window).scrollTop() >= 400) {
+      $('.js-gototop').fadeIn();
+    } else {
+      $('.js-gototop').fadeOut();
+    }
+  });
+};
 
 vela.docSidebar = function () {
   var docStickySidebar = new StickySidebar('.vel-sidebar', {
