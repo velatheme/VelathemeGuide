@@ -10,11 +10,98 @@ block main-content
         .col-12.col-md-3
           -
             var menus = [
-              { id:'sectionOne', title: 'Main menu' }
+              { id:'sectionOne', title: 'Main menu' },
+              { id:'sectionTwo', title: 'Create a new menu' },
+              { id:'sectionThree', title: 'Choose navigation' },
+              { id:'sectionFour', title: 'Create a dropdown menu' },
+              { id:'sectionFive', title: 'Create a mega menu' }
             ];
           +sidebar_menu(menus)
 
         .page-doc__content.col-12.col-md-9
           +section_documentation('sectionOne', 'Main menu')
-            .alert.alert-warning We're update content. Please wait ...
-            p(style='min-height: 100vh') &nbsp;
+            p Main menu is crucial to any online store. It serves as a road map of your site, connecting your customers with the products and information they’re looking for.
+            p If the navigation is simple and intuitive, visitors will stick around, have a positive experience, and maybe even buy something from you. But if the navigation is murky or poorly laid out, they’ll be clicking off to your competitors faster than you can say “bounce rate."
+            p For the most part, you’ll set up and manage your store’s main menu from the Shopify admin 
+              b ( Online Store &gt; Navigation )
+          +section_documentation('sectionTwo', 'Create a new menu')
+            p Your online store has two default menus that come with every theme: the main menu and the footer. If you want to add a different menu, do the following:
+            p 
+              b B1. 
+              | From your Shopify admin, go to 
+              b Online Store &gt; Navigation.
+            p
+              b B2. 
+              | On the 
+              b Navigation 
+              | page, click the purple 
+              b Add menu 
+              | button.
+            +vela_img('images/velguide_image36.png', 'Velatheme')
+            p
+              b B3. 
+              | Give your menu a 
+              n Title. 
+              | Anything will do, but generally, the more descriptive the better.
+            +vela_img('images/velguide_image37.png', 'Velatheme')
+            p
+              b B4. 
+              | Add some menu items. After click 
+              b Save menu
+          +section_documentation('sectionThree', 'Choose navigation')
+            p Our theme allows you to enable/disable main menu, and select navigation for it.
+            p
+              b B1. 
+              | From your Shopify admin, go to 
+              b Online Store &gt; Themes &gt; Customize
+            p
+              b B2. 
+              | On sections tab, open 
+              b Header
+            +vela_img('images/velguide_image38.png', 'Velatheme')
+            p
+              b B3. 
+              | Scroll to block 
+              b MAIN MENU
+            +vela_img('images/velguide_image39.png', 'Velatheme')
+            p
+              b a. Enable: 
+              | Show/hide main menu.
+            p
+              b b. Menu navigation: 
+              | Choose navigation.
+            p
+              b c. Menu mobile title: 
+              | Menu title on Mobile.
+            +vela_img('images/velguide_image40.png', 'Velatheme')
+          +section_documentation('sectionFour', 'Create a dropdown menu')
+            +vela_img('images/velguide_image43.png', 'Velatheme')
+            +vela_img('images/velguide_image41.png', 'Velatheme')
+            p You can add a drop-down menu to your online store's main menu. You can use drop-down menus to group products, collections, or pages together and make it easier for customers to navigate your online store.
+            p To add a drop-down menu from the main menu of your online store:
+            p
+              b B1. 
+              | From your Shopify admin, go to 
+              b Online Store &gt; Navigation.
+            p
+              b B2. 
+              | Click the title of your main menu.
+            p
+              b B3.
+              | Choose one of the menu items to be the header for your drop-down menu, or add a new menu item to be the header. If you don't want the header to link to anything, then you can enter # in the 
+              b Link 
+              | field when you add the menu item.
+            p
+              b B4. 
+              | Add menu items to include in the new drop-down menu. Click 
+              b Add menu item, 
+              | enter the name of the menu item, and enter or select a destination for the link.
+            p
+              b B5. 
+              | Click and drag the menu items to nest below the header item: 
+            +vela_img('images/velguide_image42.gif', 'Velatheme')
+            p
+              b B6.
+              | Click 
+              b Save menu.
+          +section_documentation('sectionFive', 'Create a mega menu')
