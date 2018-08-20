@@ -10,11 +10,91 @@ block main-content
         .col-12.col-md-3
           -
             var menus = [
-              { id:'sectionOne', title: 'Group Filter' }
+              { id:'sectionOne', title: 'Group Filter' },
+              { id:'sectionTwo', title: 'Sidebar Categories' },
+              { id:'sectionThree', title: 'Filter By Type, Vendor' },
+              { id:'sectionFour', title: 'Filter By Tags' },
+              { id:'sectionFive', title: 'Variant Colors' }
             ];
           +sidebar_menu(menus)
 
         .page-doc__content.col-12.col-md-9
           +section_documentation('sectionOne', 'Group Filter')
-            .alert.alert-warning We're update content. Please wait ...
-            p(style='min-height: 100vh') &nbsp;
+            h3 Custom filters
+            p Create filters to let customers search products by type, vendor, size, color, and custom options. Automatic filters can be easily created and will sort products based on information in the product tags.
+          +section_documentation('sectionTwo', 'Sidebar Categories')
+            p 
+              b B1. 
+              | From your Shopify admin. Go to 
+              b Online Store &gt; Themes &gt; Customize &gt; Collection pages
+            +vela_img('images/velguide_image53.png', 'Velatheme')
+            p
+              b B2. 
+              | Open panel 
+              b "Sidebar Top" 
+              | (Sidebar Categories in some older versions)
+            +vela_img('images/velguide_image54.png', 'Velatheme')
+            p You need add menu for Category menu.
+            p
+              b Automatically retrieve navigation: 
+              | You can add more menu for each collection. You need add menu with name is collection title.
+          +section_documentation('sectionThree', 'Filter By Type, Vendor')
+            p Same as above with
+              b Sidebar Categories
+            p From your Shopify admin. Go to 
+              b Online Store &gt; Themes &gt; Customize &gt; Collection pages
+            p Open panel 
+              b "Sidebar Top" 
+              | (Sidebar Categories in some older versions)
+            +vela_img('images/velguide_image55.png', 'Velatheme')
+            blockquote.blockquote.vel-blockquote Note: Click to links will go to a collection page containing products with a specific product type or vendor.
+          +section_documentation('sectionFour', 'Filter By Tags')
+            p Filter by tags will automatic get product tags on collection page.
+            p
+              b "Group_TagName" 
+              | is the format in which you need to name your tags.  The name of the group (e.g. Brand, Focal Length, Resolution) followed by an underscore (_) followed by the name of the tag (e.g. Canon, 24 MP, etc).  In the example provided, there are nine tags. 
+            p
+              b Example: 
+            code
+              p 1. Brand_Canon
+              p 2. Brand_Fugi
+              p 3. Brand_Fuji
+              p 4. Brand_Nikon
+              p 5. Focal Length_18 - 55mm
+              p 6. Resolution_12 MP
+              p 7. Resolution_16 MP
+              p 8. Resolution_18 MP
+              p 9. Resolution_24 MP
+            p From your Shopify admin. Go to 
+              b Online Store &gt; Themes &gt; Customize &gt; Collection pages
+            p Open panel 
+              b "Sidebar Filter By Tags" 
+            +vela_img('images/velguide_image56.png', 'Velatheme')
+            p &nbsp;
+            p
+              b Product tags: 
+              | You need input product tags for each product.
+            +vela_img('images/velguide_image57.png', 'Velatheme')
+          +section_documentation('sectionFive', 'Variant Colors')
+            p If you use filter by tags (Color) or swatch variant color.You need upload image for each color on your store.
+            p
+              b Filter by tags with Color
+            +vela_img('images/velguide_image58.png', 'Velatheme')
+            p
+              b Swatch variant on product page
+            +vela_img('images/velguide_image59.png', 'Velatheme')
+            p &nbsp;
+            p &nbsp;
+            h3 UPLOAD IMAGES
+            p From your Shopify admin. Go to 
+              b Settings &gt; Files 
+            p You need upload image for each color at here.
+            blockquote.blockquote.vel-blockquote Note: There's an important naming convention to respect here! The image must be named after the color option, but be handleized, and have a .png extension. You should upload image size 50x50 pixels.
+            p For example, if you have a color called 'Déjà Vu Blue', then name your image 
+              b deja-vu-blue.png
+            p Other example, if your color is 'Blue/Gray', then name your image 
+              b blue-gray.png
+            p Most simple example, if your color is 'Black', the name your image 
+              b black.png
+            blockquote.blockquote.vel-blockquote Note: Image name must be lowercase.
+            +vela_img('images/velguide_image60.png', 'Velatheme')
