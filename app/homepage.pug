@@ -10,11 +10,81 @@ block main-content
         .col-12.col-md-3
           -
             var menus = [
-              { id:'sectionOne', title: 'Homepage' }
+              { id:'sectionOne', title: 'General' },
+              { id:'sectionTwo', title: 'Slideshow' },
+              { id:'sectionThree', title: 'Product List' },
+              { id:'sectionFour', title: 'Newsletter' }
             ];
           +sidebar_menu(menus)
 
         .page-doc__content.col-12.col-md-9
-          +section_documentation('sectionOne', 'Homepage')
-            .alert.alert-warning We're update content. Please wait ...
-            p(style='min-height: 100vh') &nbsp;
+          +section_documentation('sectionOne', 'General')
+            p When you first install our theme, some homepage sections are already visible — namely the header and footer, which are standard for any online store. 
+            p Each of these sections associates to “empty state” placeholder content in the preview. These preview the formatting for each section.
+            +vela_img('images/velguide_image61.png', 'Velatheme')
+            p Clicking on any of these section blocks will bring up a set of unique configuration settings. You can also click Add section, which will reveal an array of other optional sections that you can add to your homepage. 
+            p At the very bottom of each section's settings there is a Theme settings link, which you can expand to reveal additional settings that pertain to that section. Note that many of these theme settings affect elements beyond that specific section, so be careful with the changes you make here. These will be explored in depth in the article, 
+              a(href='theme_settings.html') Theme Settings.
+          +section_documentation('sectionTwo', 'Slideshow')
+            p The Slideshow section is a great place to show off new items, offers, and sales in your store. This section will appear beneath the Header section in your store. 
+            +vela_img('images/velguide_image62.png', 'Velatheme')
+            h4 1. Settings
+            p You can set Show Prev/Next arrows to display navigation for slideshow. You can set the Autoplay and duration of the slide with the textbox below.
+            blockquote.blockquote.vel-blockquote Note: You should upload the image in size in the textbox. You can also change the image size in the text box.
+            +vela_img('images/velguide_image63.png', 'Velatheme')
+            h4 2. Content
+            p The content on the Slide image is very flexible with customizable Text, Link and Colors.
+            p You can also add video in the slideshow. You choose add content video and enter Youtube video URL.
+            +vela_img('images/velguide_image64.png', 'Velatheme')
+          +section_documentation('sectionThree', 'Product List')
+            +vela_img('images/velguide_image67.png', 'Velatheme')
+            p The section is designed to draw attention to products from a specific collection on your homepage. With this section you can display multiple products from one collection.
+            h4 1. General settings
+            +vela_img('images/velguide_image65.png', 'Velatheme')
+            ul
+              li Heading: Section heading
+              li Subheading: Section subheading
+              li Collection: Choose a specific collection that you want display products.
+              li Image size: You can read more 
+                a(href='https://help.shopify.com/en/themes/liquid/filters/url-filters#size-parameters', target='_blank') here
+            h4 2. Carousel settings
+            +vela_img('images/velguide_image66.png', 'Velatheme')
+            ul
+              li Margin: Distance between columns
+              li Limit: Number of products to displayed.
+              li Show navigation: Choose to display navigation arrow for carousel
+              li Infinity loop: Active infinity
+              li Column: Choose column product on a row.
+          +section_documentation('sectionFour', 'Newsletter')
+            +vela_img('images/velguide_image68.png', 'Velatheme')
+            h4 Settings
+            ul
+              li Heading: Section heading
+              li Description: Section description
+              li Use mailChimp: You can use mailchimp or shopify system. If you use mailchimp, you need input mailchimp form action URL.
+              +vela_img('images/velguide_image69.png', 'Velatheme')
+            h4 1. Shopify system
+            p You can find the email of registered customers in the customer management.
+            p From your Shopify admin, go to 
+              b Customers &gt; Email subscribers
+            +vela_img('images/velguide_image70.png', 'Velatheme')
+            h4 2. Use Mailchimp
+            p You need enter mailchimp action URL.
+            p
+              b B1:
+              | Login to your MailChimp account, and create a mailing list for people to sign up for.
+            p
+              b B2:
+              | After you make your list, you’ll need to get some code from it. Click on your list, and select “Signup forms” at the top. Select the Embedded forms option.
+            +vela_img('images/velguide_image71.jpg', 'Velatheme')
+            p
+              b B3:
+              | From there, you should see a text box section labeled “Copy/paste onto your site”. Within the textbox, scroll until you find the part of the code that says <form action=”…” You will need to copy everything with those quotation marks. It should begin with http://, end with a bunch of numbers and letters, and look something like this:
+            +vela_img('images/velguide_image72.jpg', 'Velatheme')
+            p
+              b B4:
+              | After that, visitors to your store will be able to sign up for your mailing list through the Newsletter box on website. That should do it!
+            blockquote.blockquote.vel-blockquote.color-red
+              p Note: We provide customize service when using mailchimp. When the customer registers the system will check whether the email exists in the list or not. As well, the notification displays a success or an error when the user registers.
+              p We will work it for $50. You can contact via email: 
+                a(href='mailto:velatheme@gmail.com') velatheme@gmail.com
