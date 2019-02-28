@@ -1,3 +1,2 @@
 # FrontendVelatheme
-fix loi 628
-npm cache clean
+fix loi 628: npm cache clean
