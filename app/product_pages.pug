@@ -10,11 +10,66 @@ block main-content
         .col-12.col-md-3
           -
             var menus = [
-              { id:'sectionOne', title: 'Product pages' }
+              { id:'sectionOne', title: 'Product pages' },
+              { id:'sectionTwo', title: 'General settings' },
+              { id:'sectionThree', title: 'Product zoom' },
+              { id:'sectionFour', title: 'Product short description' },
+              { id:'sectionFive', title: 'Product more info' },
+              { id:'sectionSix', title: 'Product social sharing' },
+              { id:'sectionSeven', title: 'Product variant' }
             ];
           +sidebar_menu(menus)
 
         .page-doc__content.col-12.col-md-9
           +section_documentation('sectionOne', 'Product pages')
-            .alert.alert-warning We're update content. Please wait ...
-            p(style='min-height: 100vh') &nbsp;
+            p <b>1.</b> From your Shopify admin, go to <b>Online Store</b> > <b>Themes</b>.
+            p <b>2.</b> Find the theme that you want to edit and click <b>Customize</b>.
+            p <b>3.</b> Go to Product page.
+            +vela_img('images/velaguide_image73.png','velatheme')
+            p &nbsp;
+          +section_documentation('sectionTwo','General settings')
+            p
+              +vela_img('images/velaguide_image74.png','velatheme')
+            p &nbsp;
+          +section_documentation('sectionThree','Product zoom')
+            p You can enable/disable zoom on product
+            p
+              +vela_img('images/velaguide_image75.png','velatheme')
+            
+            h5 Zoom type
+            p <b>1.</b> Windown
+            p
+              +vela_img('images/velaguide_image76.png','product zoom')
+            p <b>2.</b> Inner
+            p
+              +vela_img('images/velaguide_image77.png','product zoom')
+            p <b>3.</b> Lens
+            p
+              +vela_img('images/velaguide_image78.png','product zoom')
+            p <b>4.</b> Zoom window width, height
+            p
+              +vela_img('images/velaguide_image79.png','product zoom')
+            p &nbsp;
+          +section_documentation('sectionFour','Product short description')
+            p You can enable/disable Product short description
+              +vela_img('images/velaguide_image80.png','Product short description')
+            p &nbsp;
+          +section_documentation('sectionFive','Product more info')
+            p You can enable/disable Product tab more info
+            .alert.alert-warning The tab item is hidden if it is null  ...
+            p
+              +vela_img('images/velaguide_image81.png','Product tab more info')
+            p &nbsp;
+          +section_documentation('sectionSeven','Product variant')
+            p From left menu onlick  <b> Theme settings </b> -> <b>Vela Features</b> -> <b>Find Product variants</b>
+            p
+              +vela_img('images/velaguide_image84.png','Product variant')
+            p &nbsp;
+            p <b>1.</b> Style list for product variants.
+            p
+              +vela_img('images/velaguide_image85.png','Product variant')
+            p <b>2.</b> Style dropdown for product variants.
+            p
+              +vela_img('images/velaguide_image86.png','Product variant')
+            p &nbsp;
+            
